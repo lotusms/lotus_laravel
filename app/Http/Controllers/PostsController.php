@@ -18,6 +18,7 @@ class PostsController extends Controller
    */
   public function __construct()
   {
+    // Make pages visible by auth except the index(for posts) and show views
     $this->middleware('auth', ['except' => ['index', 'show']]);
   }
 
@@ -29,10 +30,11 @@ class PostsController extends Controller
   public function index()
   {
     ///// Add paginated views to the response
-    $posts = Post::orderBy('title', 'desc')->paginate(10);
+    // $posts = Post::orderBy('title', 'desc')->paginate(10);
+    $posts = Post::latest()->paginate(5);
     
     return 
-      view('posts.index')->with('posts', $posts);
+      view('posts.index', compact('posts'))->with('posts', $posts);
     
   }
 

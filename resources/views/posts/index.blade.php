@@ -5,27 +5,31 @@
   <div class="py-3">
     <a href="/posts/create" class="btn btn-primary btn-sm">Create Post</a>
   </div>
-  <div class="row">
     @if(count($posts) > 0)
-      @foreach($posts as $post)
-        <div class="col-md-4">
-          <div class="card mb-3">
-            @if(strlen($post->cover_image) >= 1 )
-              <img style="width:100%" src="{{$post->cover_image}}" alt="{{$post->title}}">
-              {{-- <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}"> --}}
-            @endif
-            
-            <div class="card-body">
-              <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-              <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
-              <div>{!!$post->body!!}</div>
+      <div class="row">
+        @foreach($posts as $post)
+          <div class="col-md-4">
+            <div class="card mb-3">
+              @if(strlen($post->cover_image) >= 1 )
+                <img style="width:100%" src="{{$post->cover_image}}" alt="{{$post->title}}">
+                {{-- <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}"> --}}
+              @endif
+              
+              <div class="card-body">
+                <h3><a href="/posts/{{$post->id}}">{{str_limit($post->title, 35)}}</a></h3>
+                <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
+                <div>{!!str_limit($post->body, 250)!!}</div>
+              </div>
             </div>
           </div>
+        @endforeach  
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          {{$posts->links()}}
         </div>
-      @endforeach  
-      {{$posts->links()}}
+      </div>
     @else
       <p>No posts found</p>
     @endif
-  </div>
 @endsection
