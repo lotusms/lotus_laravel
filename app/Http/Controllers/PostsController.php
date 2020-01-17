@@ -96,7 +96,7 @@ class PostsController extends Controller
     $post->cover_image = $fileNameToStore;
     $post->save();
 
-    return redirect('/posts')->with('success', 'Post created');
+    return redirect('/posts')->with('success', 'Yay!!! Your post has been created');
   }
 
   /**
@@ -105,11 +105,11 @@ class PostsController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
+  public function show(Post $post)
   {
-    // fetch the post by id
-    $post = Post::find($id);
-    return view('posts.show')->with('post', $post);
+
+    // fetch a single post
+    return view('posts.show', compact('post'))->with('post', $post);
 
   }
 
@@ -126,10 +126,10 @@ class PostsController extends Controller
 
     // Check for correct user
     if(auth()->user()->id !== $post->user_id) {
-      return redirect('/posts')->with('error', 'You reached an unauthorized section and you have been re-directed.');
+      return redirect('/posts')->with('error', 'Oops!, you reached an unauthorized section and you have been re-directed.');
     }
 
-    return view('posts.edit')->with('post', $post);
+    return view('posts.edit', compact('post'))->with('post', $post);
   }
 
   /**
@@ -174,7 +174,7 @@ class PostsController extends Controller
     }
     $post->save();
 
-    return redirect('/posts')->with('success', 'Post updated');       
+    return redirect('/posts')->with('success', 'Yay!!! Your post was updated');       
   }
 
   /**
@@ -190,7 +190,7 @@ class PostsController extends Controller
     
     // Check for correct user
     if(auth()->user()->id !== $post->user_id) {
-      return redirect('/posts')->with('error', 'You reached an unauthorized section and you have been re-directed.');
+      return redirect('/posts')->with('error', 'Oops!!, you reached an unauthorized section and you have been re-directed.');
     }
 
     if($post->cover_image !== '') {
@@ -199,7 +199,7 @@ class PostsController extends Controller
     }
 
     $post->delete();
-    return redirect('/posts')->with('success', 'Post removed'); 
+    return redirect('/posts')->with('success', 'FYI, you removed a post.'); 
 
   }
 }
