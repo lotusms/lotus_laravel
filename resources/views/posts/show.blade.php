@@ -5,8 +5,8 @@
   <div class="py-4">
     <h1>{{$post->title}}</h1>
     @if(strlen($post->cover_image) >= 1 )
-      <img style="width:100%" src="{{$post->cover_image}}" alt="{{$post->title}}">
-      {{-- <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}"> --}}
+      {{-- <img style="width:100%" src="{{$post->cover_image}}" alt="{{$post->title}}"> --}}
+      <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}">
     @endif
     <div>{!!$post->body!!}</div>
     <hr>

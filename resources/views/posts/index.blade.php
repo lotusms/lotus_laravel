@@ -11,8 +11,8 @@
           <div class="col-md-4">
             <div class="card mb-3">
               @if(strlen($post->cover_image) >= 1 )
-                <img style="width:100%" src="{{$post->cover_image}}" alt="{{$post->title}}">
-                {{-- <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}"> --}}
+                {{-- <img style="width:100%" src="{{$post->cover_image}}" alt="{{$post->title}}"> --}}
+                <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}">
               @endif
               <div class="card-body">
                 <h3>
