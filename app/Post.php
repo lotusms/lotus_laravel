@@ -25,4 +25,12 @@ class Post extends Model
     $this->attributes['title'] = $value;
     $this->attributes['slug'] = str_slug($value);
   }
+
+  public function getUrlAttribute() {
+    return route('posts.show', $this->id);
+  }
+
+  public function getCreatedDateAttribute() {
+    return $this->created_at->format("d-M-Y");
+  }
 }

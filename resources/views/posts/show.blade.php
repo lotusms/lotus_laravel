@@ -10,12 +10,17 @@
     @endif
     <div>{!!$post->body!!}</div>
     <hr>
-    <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
+    <small>
+      Written on {{$post->created_date}} by 
+      <a href="{{$post->user->url}}">{{$post->user->name}}</a>
+    </small>
+
     <hr>
+
     @if(!Auth::guest())
     @if(Auth::user()->id === $post->user_id)
       <div class="d-flex justify-content-between">
-        <a href="/posts/{{$post->id}}/edit" class="btn btn-primary btn-sm">Edit Post</a>
+        <a href="{{$post->url}}/edit" class="btn btn-primary btn-sm">Edit Post</a>
 
         {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST'])!!}     
           {{Form::hidden('_method', 'DELETE')}}
