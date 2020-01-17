@@ -13,7 +13,7 @@ class Post extends Model
   // public $primaryKey = 'id';
 
   // Timestamps
-  // public $timestamps = true;
+  public $timestamps = true;
 
   protected $fillable = ['title', 'body'];
 
