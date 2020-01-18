@@ -32,7 +32,7 @@ class PostsController extends Controller
     ///// Add paginated views to the response
     // $posts = Post::orderBy('title', 'desc')->paginate(10);
 
-    $posts = Post::latest()->paginate(5);
+    $posts = Post::latest()->paginate(6);
     
     return 
       view('posts.index', compact('posts'))->with('user');

@@ -35,8 +35,17 @@ class Post extends Model
   }
 
   public function getBodyHtmlAttribute(){
+    // return $this->bodyHtml();
     return \Parsedown::instance()->text($this->body);
   }
+
+  // public function getExcerptAttribute(){
+  //   return str_limit(strip_tags($this->bodyHtml()), 250);
+  // }
+
+  // private function bodyHtml(){
+  //   return \Parsedown::instance()->text($this->body);
+  // }
 
 
 }

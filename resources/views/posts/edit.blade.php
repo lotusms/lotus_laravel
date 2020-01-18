@@ -16,7 +16,8 @@
       {{Form::file('cover_image')}}
     </div>
 
-    <div class="d-flex justify-content-end">
+    <div class="d-flex justify-content-between">
+      <a href="{{ route('posts.index') }}" class="btn btn-secondary btn-sm">Back to Blog</a>
       {{Form::hidden('_method', 'PUT')}}
       {{Form::submit('Submit', ['class'=> 'btn btn-primary btn-sm'])}}
     </div>

@@ -7,7 +7,7 @@
     @if(strlen($post->cover_image) >= 1 )
       <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}">
     @endif
-    <div>{!!$post->body!!}</div>
+    <div class="mt-4">{!!$post->body_html!!}</div>
     <hr>
     <small>
       Written on {{$post->created_date}} by 

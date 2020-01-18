@@ -21,7 +21,7 @@
                   Written on {{$post->created_date}} 
                   by <a href="{{$post->user->url}}">{{$post->user->name}}</a>
                 </small>
-                <div>{!!str_limit($post->body, 250)!!}</div>
+                <div class="excerpt">{!!str_limit($post->body_html, 225)!!}</div>
               </div>
             </div>
           </div>
