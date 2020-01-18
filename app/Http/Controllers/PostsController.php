@@ -122,7 +122,7 @@ class PostsController extends Controller
   public function edit($id)
   {
     // fetch the post by id
-    $post = Post::find($id);
+    $post = Post::whereSlug($id)->first();
 
     // Check for correct user
     if(auth()->user()->id !== $post->user_id) {
@@ -162,7 +162,7 @@ class PostsController extends Controller
       $fileNameToStore = $filename.'_'.time().'.'.$extension;
 
       //Upload the image
-      $path = $request->file('cover_image')->storeAs('storage/cover_images', $fileNameToStore);
+      $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
     } 
 
     // Create post

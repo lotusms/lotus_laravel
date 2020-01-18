@@ -44,7 +44,7 @@ class User extends Authenticatable
 
   public function getUrlAttribute() {
     // return route('posts.show', $this->id);
-    return '#';
+    // return '#';
   }
 
 }
