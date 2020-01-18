@@ -33,7 +33,7 @@
                             {{Form::hidden('_method', 'DELETE')}}
                             {{Form::submit('Delete', ['class' => 'btn btn-danger btn-sm'] )}}
                           {!!Form::close()!!}
-                          <a href="/posts/{{$post->id}}/edit" class="btn btn-primary btn-sm float-right mr-2">Edit</a>
+                          <a href="{{$post->url}}/edit" class="btn btn-primary btn-sm float-right mr-2">Edit</a>
                         </td>
                       </tr>
                     @endforeach
