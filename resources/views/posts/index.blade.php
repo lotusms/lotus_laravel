@@ -8,7 +8,7 @@
     @if(count($posts) > 0)
       <div class="row">
         @foreach($posts as $post)
-          <div class="col-md-4">
+          {{-- <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="card mb-3">
               @if(strlen($post->cover_image) >= 1 )
                 <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}">
@@ -22,6 +22,19 @@
                   by <a href="{{$post->user->url}}">{{$post->user->name}}</a>
                 </small>
                 <div class="excerpt">{!!str_limit($post->body_html, 225)!!}</div>
+              </div>
+            </div>
+          </div> --}}
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card mb-3">
+              <post-image :post="{{ $post }}"></post-image>
+              <div class="card-body">
+                <post-title :post="{{ $post }}"></post-title>
+                <small>
+                  Written on {{$post->created_date}} 
+                  by <a href="{{$post->user->url}}">{{$post->user->name}}</a>
+                </small>
+                <post-content :post="{{ $post }}"></post-content>
               </div>
             </div>
           </div>

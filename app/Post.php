@@ -17,6 +17,8 @@ class Post extends Model
 
   protected $fillable = ['title', 'body'];
 
+  protected $appends = ['created_date', 'body_html', 'url', 'created_date'];
+
   public function user() {
     return $this->belongsTo('App\User');
   }
