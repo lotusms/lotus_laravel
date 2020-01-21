@@ -1,10 +1,20 @@
 // Body
-$body-bg: #f8fafc;
+$white: #ffffff;
+$black: #0e1317;
+$accent: #505b62;
+$primary: #2c5364;
+
+$body-bg: $white;
+$white-text: $white;
+$green-text: #7cb342;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+$barlow: "Barlow";
+$playball: "Playball";
 
 // Colors
 $blue: #3490dc;

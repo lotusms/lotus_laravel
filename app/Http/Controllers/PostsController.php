@@ -109,7 +109,8 @@ class PostsController extends Controller
   {
 
     // fetch a single post
-    return view('posts.show', compact('post'))->with('post', $post);
+    $posts = Post::latest()->get(); 
+    return view('posts.show', compact('post'))->with(['post'=> $post, 'posts'=> $posts]);
 
   }
 

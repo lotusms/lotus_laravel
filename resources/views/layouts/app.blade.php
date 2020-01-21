@@ -22,18 +22,17 @@
   <body>
     <div id="app">
       @include('inc.navbar')
-      <main class="main-body py-4">
-        <div class="container">
-          @include('inc.messages')
-          @yield('content')
-        </div>
-      </main>
+      @include('inc.messages')
+      @yield('content')
+      @include('inc.footer')
     </div>
 
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
       try{
         CKEDITOR.replace( 'article-ckeditor' )
+        ckInstance.removeAllListeners();
+        CKEDITOR.remove(ckInstance);
       }
       catch {
         

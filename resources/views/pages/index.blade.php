@@ -1,13 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="jumbotron text-center">
-    <h1 class="display-4">{{$title}}</h1>
-    <p class="lead">This is the laravel application</p>
-    <hr class="my-4">
-    <p>
-      <a href="/public/lotus/login" class="btn btn-primary btn-lg" role="button">Login</a>
-      <a href="/public/lotus/register" class="btn btn-success btn-lg" role="button">Register</a>
-    </p>
-  </div>
+  <main class="main-body">
+    <main-slider></main-slider>
+		<certifications></certifications>
+    <main-content></main-content>
+    <services></services>
+    <responsive-web-design></responsive-web-design>
+     <website-types></website-types>
+    <testimonials></testimonials>
+    <latest-work></latest-work>
+  </main>
 @endsection

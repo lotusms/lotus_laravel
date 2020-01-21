@@ -1,51 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
-  <h1>Posts</h1>
-  <div class="py-3">
-    <a href="/posts/create" class="btn btn-primary btn-sm">Create Post</a>
-  </div>
-    @if(count($posts) > 0)
-      <div class="row">
-        @foreach($posts as $post)
-          {{-- <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="card mb-3">
-              @if(strlen($post->cover_image) >= 1 )
-                <img style="width:100%" src="{{asset("storage/cover_images/$post->cover_image")}}" alt="{{$post->title}}">
-              @endif
-              <div class="card-body">
-                <h3>
-                  <a href="{{$post->url}}">{{str_limit($post->title, 35)}}</a>
-                </h3>
-                <small>
-                  Written on {{$post->created_date}} 
-                  by <a href="{{$post->user->url}}">{{$post->user->name}}</a>
-                </small>
-                <div class="excerpt">{!!str_limit($post->body_html, 225)!!}</div>
-              </div>
-            </div>
-          </div> --}}
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <div class="card mb-3">
-              <post-image :post="{{ $post }}"></post-image>
-              <div class="card-body">
-                <post-title :post="{{ $post }}"></post-title>
-                <small>
-                  Written on {{$post->created_date}} 
-                  by <a href="{{$post->user->url}}">{{$post->user->name}}</a>
-                </small>
-                <post-content :post="{{ $post }}"></post-content>
-              </div>
-            </div>
-          </div>
-        @endforeach  
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          {{$posts->links()}}
+  <main class="main-body py-4">
+    <div class="uk-container uk-container-large uk-dark">
+      <div uk-grid>
+        <div class="uk-width-1-2@m">
+          <h1 class="white-text">Posts</h1>
         </div>
+
+        <div class="uk-width-1-2@m">
+          <div class="uk-text-right py-3">
+            <a href="/posts/create" class="uk-button uk-button-primary">Create Post</a>
+          </div>
+        </div>  
       </div>
-    @else
-      <p>No posts found</p>
-    @endif
+      @if(count($posts) > 0)
+        <div uk-grid>
+          @foreach($posts as $post)
+            <div class="uk-width-1-3@m">
+              <div class="uk-card uk-card-secondary mb-3">
+                <post-image :post="{{ $post }}"></post-image>
+                <div class="uk-card-body">
+                  <post-title :post="{{ $post }}"></post-title>
+                  <div>By: {{$post->user->name}}, {{$post->created_date}}</div>
+                  <post-content :post="{{ $post }}"></post-content>
+                </div>
+              </div>
+            </div>
+          @endforeach  
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            {{$posts->links()}}
+          </div>
+        </div>
+      @else
+        <p>No posts found</p>
+      @endif
+    </div>
+  </main>
 @endsection

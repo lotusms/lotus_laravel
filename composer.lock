@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69a2915710e4a1dd96feaddcebb590a3",
+    "content-hash": "053473be6114dc73ab820b7680bb6698",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2972,6 +2972,34 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2019-10-24T08:53:34+00:00"
+        },
+        {
+            "name": "uikit/uikit",
+            "version": "v3.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uikit/uikit.git",
+                "reference": "35cfc4c137fd5f3923fd2e0c3d975578839ea27e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uikit/uikit/zipball/35cfc4c137fd5f3923fd2e0c3d975578839ea27e",
+                "reference": "35cfc4c137fd5f3923fd2e0c3d975578839ea27e",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.",
+            "homepage": "https://getuikit.com/",
+            "time": "2019-12-17T12:54:28+00:00"
         },
         {
             "name": "unisharp/laravel-ckeditor",

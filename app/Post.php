@@ -17,7 +17,7 @@ class Post extends Model
 
   protected $fillable = ['title', 'body'];
 
-  protected $appends = ['created_date', 'body_html', 'url', 'created_date'];
+  protected $appends = ['created_date', 'body_html', 'url'];
 
   public function user() {
     return $this->belongsTo('App\User');
@@ -33,7 +33,11 @@ class Post extends Model
   }
 
   public function getCreatedDateAttribute() {
-    return $this->created_at->format("d-M-Y");
+    return $this->created_at->format("F dS, Y");
+  }
+
+  public function getImageAttribute() {
+    return $this->cover_image;
   }
 
   public function getBodyHtmlAttribute(){

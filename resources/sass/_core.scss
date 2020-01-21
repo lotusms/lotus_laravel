@@ -1,0 +1,329 @@
+a.uk-link-heading:hover,
+.uk-link-heading a:hover,
+.uk-link-toggle:hover .uk-link-heading,
+.uk-link-toggle:focus .uk-link-heading {
+    color: #1e87f0;
+    text-decoration: none;
+}
+
+/* Focus */
+
+.uk-input:focus,
+.uk-select:focus,
+.uk-textarea:focus {
+    outline: none;
+    background-color: #fff;
+    color: #666;
+    border-color: #1e87f0;
+}
+
+.uk-radio:focus,
+.uk-checkbox:focus {
+    outline: none;
+    border-color: #1e87f0;
+}
+
+/*
+ * Checked
+ */
+
+.uk-radio:checked,
+.uk-checkbox:checked,
+.uk-checkbox:indeterminate {
+    background-color: #1e87f0;
+    border-color: transparent;
+}
+
+a:hover, .uk-link:hover, .uk-link-toggle:hover .uk-link, .uk-link-toggle:focus .uk-link {
+    text-decoration: none !important;
+}
+
+.uk-button {
+    &:hover,
+    &:focus {
+        text-decoration: none !important;
+    }
+}
+
+.uk-button-small {
+    padding: 0 15px;
+    line-height: 28px;
+    font-size: 14px;
+    min-height:32px !important;
+}
+
+/*
+ * Link
+ * 1. Reset
+ * 2. Style
+ */
+
+.uk-button-link {
+    padding: 0;
+    line-height: 1.5;
+    background: none;
+    color: #1e87f0;
+    &:hover,
+    &:focus {
+        color: #0f6ecd;
+        text-decoration: none !important;
+    }
+    &:disabled {
+        color: #999;
+        text-decoration: none;
+    }
+}
+
+/*
+ * Primary
+ */
+
+.uk-button-primary {
+    background-color: $primary !important;
+    color: #fff !important;
+    border: 1px solid transparent;
+    &:hover,
+    &:focus {
+        background-color: darken($primary, 7%) !important;
+        color: #fff !important;
+    }
+    &:active,
+    &.uk-active {
+        background-color: #0e6ecd;
+        color: #fff;
+    }
+}
+
+.uk-section-primary {
+    background: #1e87f0;
+}
+
+.uk-tile-primary {
+    background: #1e87f0;
+}
+
+.uk-card-primary {
+    background: #1e87f0;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    .uk-card-title {
+        color: #fff;
+    }
+    &.uk-card-hover &:hover {
+        background-color: #1e87f0;
+        box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.uk-alert-primary {
+    background: #d8eafc;
+    color: #1e87f0;
+}
+
+.uk-badge {
+    box-sizing: border-box;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 5px;
+    border-radius: 0.25rem;
+    vertical-align: middle;
+    /* 1 */
+    background: #1e87f0;
+    color: #fff;
+    font-size: 75%;
+    /* 2 */
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.uk-label {
+    display: inline-block;
+    padding: 0 10px;
+    background: #1e87f0;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    color: #fff;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.uk-subnav-pill > .uk-active > a {
+    background-color: #1e87f0;
+    color: #fff;
+}
+.uk-notification-message-primary {
+    color: #1e87f0;
+}
+
+/*
+ * Progress bar
+ * 1. Remove right border in IE11 and Edge
+ */
+
+.uk-progress::-webkit-progress-value {
+    background-color: #1e87f0;
+    -webkit-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.uk-progress::-moz-progress-bar {
+    background-color: #1e87f0;
+}
+
+.uk-progress::-ms-fill {
+    background-color: #1e87f0;
+    -ms-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+    /* 1 */
+    border: 0;
+}
+
+.uk-text-primary {
+    color: #1e87f0 !important;
+}
+
+.uk-text-background {
+    /* 1 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* 2 */
+    display: inline-block;
+    /* 3 */
+    color: #1e87f0 !important;
+}
+
+@supports (-webkit-background-clip: text) {
+    .uk-text-background {
+        background-color: #1e87f0;
+    }
+}
+
+.uk-background-default {
+    background-color: #fff;
+}
+
+.uk-background-muted {
+    background-color: #f8f8f8;
+}
+
+.uk-background-primary {
+    background-color: #1e87f0;
+}
+
+.uk-background-secondary {
+    background-color: #222;
+}
+
+// .uk-tab > .uk-active > a {
+//   color: #333;
+//   border-color: #1e87f0;
+// }
+
+// .uk-tab > * > a:hover,
+// .uk-tab > * > a:focus {
+//   color: #666;
+//   text-decoration: none;
+// }
+
+/*
+ * Secondary
+ */
+
+.uk-section-secondary {
+    background: #222;
+}
+
+.uk-tile-secondary {
+    background: #222;
+}
+
+.uk-button-secondary {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid transparent;
+    &:hover,
+    &:focus {
+        background-color: #151515;
+        color: #fff;
+    }
+    &:active,
+    &.uk-active {
+        background-color: #090909;
+        color: #fff;
+    }
+}
+
+.uk-card-secondary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    .uk-card-title {
+        color: #fff;
+    }
+    &.uk-card-hover &:hover {
+        background-color: #222;
+        box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+    }
+}
+
+/*
+ * Default
+ */
+
+.uk-button-default {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #e5e5e5;
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: #333;
+        border-color: #b2b2b2;
+    }
+    &:active,
+    &.uk-active {
+        background-color: transparent;
+        color: #333;
+        border-color: #999999;
+    }
+}
+
+/*
+ * Disabled
+ * The same for all style modifiers
+ */
+
+.uk-button-default:disabled,
+.uk-button-primary:disabled,
+.uk-button-secondary:disabled,
+.uk-button-danger:disabled {
+    background-color: transparent;
+    color: #999;
+    border-color: #e5e5e5;
+}
+
+/*
+ * Danger
+ */
+
+.uk-button-danger {
+    background-color: #f0506e;
+    color: #fff;
+    border: 1px solid transparent;
+    &:hover,
+    &:focus {
+        background-color: #ee395b;
+        color: #fff;
+    }
+    &:active,
+    &.uk-active {
+        background-color: #ec2147;
+        color: #fff;
+    }
+}
