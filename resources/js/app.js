@@ -33,7 +33,7 @@ Vue.component(
     "post-content",
     require("./components/post/PostContent.vue").default
 );
-Vue.component("m-editor", require("./components/MEditor.vue").default);
+// Vue.component("m-editor", require("./components/MEditor.vue").default);
 Vue.component("main-slider", require("./components/home/MainSlider").default);
 Vue.component(
     "certifications",
