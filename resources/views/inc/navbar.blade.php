@@ -22,10 +22,10 @@
                 </a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-1-5  uk-box-shadow-medium">
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Graphic Design</a></li>
-                    <li><a href="#">User Experience Optimization</a></li>
-                    <li><a href="#">Web Maintenance</a></li>
+                    <li><a href="/web-design">Web Design</a></li>
+                    <li><a href="/graphic-design">Graphic Design</a></li>
+                    <li><a href="/user-experience-optimization">User Experience Optimization</a></li>
+                    <li><a href="/web-maintenance">Web Maintenance</a></li>
                   </ul>
                 </div>
             </li>
@@ -62,11 +62,11 @@
     <div class="uk-width-1-1 main-nav mt-3">
       <ul class="list-unstyled offcanvas-menu">
           <li><a href="/">Home</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Graphic Design</a></li>
-          <li><a href="#">User Experience Optimization</a></li>
-          <li><a href="#">Web Maintenance</a></li>
-          <li><a href="/posts">How it works</a></li>
+          <li><a href="/web-design">Web Design</a></li>
+          <li><a href="/graphic-design">Graphic Design</a></li>
+          <li><a href="/user-experience-optimization">User Experience Optimization</a></li>
+          <li><a href="/web-maintenance">Web Maintenance</a></li>
+          <li><a href="/how-it-works">How it works</a></li>
           <li><a href="/posts">Blog</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>

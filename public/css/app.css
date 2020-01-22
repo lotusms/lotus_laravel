@@ -27825,3 +27825,18 @@ footer {
   top: -200px;
 }
 
+.cores {
+  background: #4f5b62;
+  border: 5px solid #539608;
+  border-radius: 100% !important;
+  width: 240px;
+  height: 240px;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: flex;
+  margin: 0 auto;
+}
+

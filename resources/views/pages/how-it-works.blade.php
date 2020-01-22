@@ -26,4 +26,6 @@
       <timeline></timeline>
     </div>
   </main>
+  <web-maintenance-banner></web-maintenance-banner>
+  <reach-out></reach-out>
 @endsection

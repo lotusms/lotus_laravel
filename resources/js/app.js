@@ -40,6 +40,19 @@ Vue.component(
     "timeline",
     require("./components/how-it-works/Timeline").default
 );
+Vue.component("reach-out", require("./components/shared/ReachOut.vue").default);
+Vue.component(
+    "web-maintenance-banner",
+    require("./components/how-it-works/WebMaintenanceBanner.vue").default
+);
+Vue.component(
+    "contact-info",
+    require("./components/contact/ContactInfo.vue").default
+);
+Vue.component(
+    "contact-form",
+    require("./components/contact/ContactForm.vue").default
+);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
