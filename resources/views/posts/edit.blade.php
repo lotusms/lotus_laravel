@@ -12,9 +12,9 @@
           </div>
           <div class="form-group">
             {{Form::label('body', 'Body', ['class' => 'uk-form-label'])}}
-            {{-- <m-editor :body="body"> --}}
+            {{-- <tiny-mce :body="body"> --}}
               {{Form::textarea('body', $post->body, ['id'=>'article-ckeditor', 'class' => 'uk-textarea', 'placeholder' => 'Body Text'])}}
-            {{-- </m-editor> --}}
+            {{-- </tiny-mce> --}}
           </div>
 
           <div class="form-group">

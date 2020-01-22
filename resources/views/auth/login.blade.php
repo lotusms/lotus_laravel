@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<main class="main-body py-4" uk-height-viewport>
-    <div class="uk-position-center" uk-grid>
+<main class="main-body p-4" uk-height-viewport>
+    <div class="uk-position-center" style="margin: 0 auto" uk-grid>
         <div class="uk-width-1-1 p-0">
             <div class="uk-card uk-card-secondary uk-card-body  uk-dark login-card">
                 <h1 class="uk-card-title uk-text-center">{{ __('Login') }}</h1>
@@ -12,7 +12,7 @@
                         @csrf
 
                         <div uk-grid>
-                            <label for="email" class="uk-width-1-4@m uk-form-label text-md-right">{{ __('E-Mail Address:') }}</label>
+                            <label for="email" class="uk-width-1-4@m uk-form-label uk-text-right@m">{{ __('E-Mail Address:') }}</label>
 
                             <div class="uk-width-3-4@m">
                                 <input id="email" type="email" class="uk-input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -26,7 +26,7 @@
                         </div>
 
                         <div uk-grid>
-                            <label for="password" class="uk-width-1-4@m uk-form-label text-md-right">{{ __('Password:') }}</label>
+                            <label for="password" class="uk-width-1-4@m uk-form-label uk-text-right@m">{{ __('Password:') }}</label>
 
                             <div class="uk-width-3-4@m">
                                 <input id="password" type="password" class="uk-input @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">

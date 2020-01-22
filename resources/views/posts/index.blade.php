@@ -5,14 +5,17 @@
     <div class="uk-container uk-container-large uk-dark">
       <div uk-grid>
         <div class="uk-width-1-2@m">
-          <h1 class="white-text">Posts</h1>
+          <h1 class="white-text">Blog</h1>
         </div>
-
-        <div class="uk-width-1-2@m">
-          <div class="uk-text-right py-3">
-            <a href="/posts/create" class="uk-button uk-button-primary">Create Post</a>
-          </div>
-        </div>  
+        @guest
+          <div></div>
+        @else
+          <div class="uk-width-1-2@m">
+            <div class="uk-text-right py-3">
+              <a href="/posts/create" class="uk-button uk-button-primary">Create Post</a>
+            </div>
+          </div>  
+        @endguest
       </div>
       @if(count($posts) > 0)
         <div uk-grid>

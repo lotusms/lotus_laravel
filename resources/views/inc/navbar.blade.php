@@ -12,61 +12,7 @@
     </div>
 
     <div class="uk-navbar-right desktop-menu" uk-grid>
-      <div class="uk-width-1-1 login-register">
-        @guest
-          <ul class="uk-navbar-nav uk-flex-right admin-menu">
-            <li>
-              <a 
-                href="{{ route('login') }}"
-                class="uk-button uk-button-secondary uk-button-small mr-2"
-                style="color:#fff">
-                {{ __('Login') }}
-              </a>
-            </li>
-            @if (Route::has('register'))
-              <li>
-                <a 
-                  href="{{ route('register') }}"
-                  class="uk-button uk-button-secondary uk-button-small"
-                  style="color:#fff">
-                  {{ __('Register') }}
-                </a>
-              </li>
-            @endif
-          </ul>
-        @else
-          <ul class="uk-navbar-nav uk-flex-right admin-menu">
-            <li>
-              <a href="#">
-                {{ Auth::user()->name }} 
-                <span uk-icon="chevron-down"></span>
-              </a>
-              <div class="uk-navbar-dropdown uk-box-shadow-medium">
-                <ul class="uk-nav uk-navbar-dropdown-nav admin-menu">
-                  <li>
-                    <a href="/dashboard">
-                      Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a 
-                      href="{{ route('logout') }}" 
-                      onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                      {{ __('Logout') }}
-                    </a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      @csrf
-                    </form>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        @endguest
-      </div>  
-      <div class="uk-width-1-1 mt-0 main-nav">
+      <div class="uk-width-1-1 mt-0 main-nav uk-position-bottom">
         <ul class="uk-navbar-nav uk-flex-right">
             <li class="uk-active"><a href="/">Home</a></li>
             <li>
@@ -83,6 +29,7 @@
                   </ul>
                 </div>
             </li>
+            <li><a href="/how-it-works">How it works</a></li>
             <li><a href="/posts">Blog</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
@@ -119,6 +66,7 @@
           <li><a href="#">Graphic Design</a></li>
           <li><a href="#">User Experience Optimization</a></li>
           <li><a href="#">Web Maintenance</a></li>
+          <li><a href="/posts">How it works</a></li>
           <li><a href="/posts">Blog</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>

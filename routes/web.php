@@ -14,6 +14,7 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
+Route::get('/how-it-works', 'PagesController@howitworks');
 Route::resource('posts', 'PostsController')->except('show');
 Route::get('/posts/{slug}', 'PostsController@show')->name('posts.show');
 Auth::routes();

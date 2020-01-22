@@ -21,7 +21,7 @@
                   <table class="uk-table uk-table-hover uk-table-divider uk-dark">
                     <thead>
                       <tr>
-                        <th>Title</th>
+                        <th class="green-text">Post Title</th>
                         <th class="uk-text-right"><a href="/posts/create" class="uk-button uk-button-primary uk-button-small">Create Post</a></th>
                       </tr>
                     </thead>

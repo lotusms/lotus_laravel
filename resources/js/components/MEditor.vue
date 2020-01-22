@@ -25,8 +25,9 @@
 </template>
 
 <script>
-import MarkdownIt from "markdown-it";
-const md = new MarkdownIt();
+// import MarkdownIt from "markdown-it";
+import TinyMce from "tinymce";
+const md = new TinyMce();
 // import Quill from "quill";
 // var container = document.getElementById("article-editor");
 // var editor = new Quill();

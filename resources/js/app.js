@@ -33,38 +33,12 @@ Vue.component(
     "post-content",
     require("./components/post/PostContent.vue").default
 );
-// Vue.component("m-editor", require("./components/MEditor.vue").default);
-Vue.component("main-slider", require("./components/home/MainSlider").default);
+Vue.component("home", require("./components/home/Home").default);
+
+Vue.component("app-footer", require("./components/footers/AppFooter").default);
 Vue.component(
-    "certifications",
-    require("./components/home/Certifications").default
-);
-Vue.component("main-content", require("./components/home/MainContent").default);
-Vue.component("services", require("./components/home/Services").default);
-Vue.component(
-    "responsive-web-design",
-    require("./components/home/ResponsiveWebDesign").default
-);
-Vue.component(
-    "website-types",
-    require("./components/home/WebsiteTypes").default
-);
-Vue.component(
-    "testimonials",
-    require("./components/home/Testimonials").default
-);
-Vue.component("latest-work", require("./components/home/LatestWork").default);
-Vue.component(
-    "left-footer",
-    require("./components/footers/LeftFooter").default
-);
-Vue.component(
-    "center-footer",
-    require("./components/footers/CenterFooter").default
-);
-Vue.component(
-    "right-footer",
-    require("./components/footers/RightFooter").default
+    "timeline",
+    require("./components/how-it-works/Timeline").default
 );
 
 /**

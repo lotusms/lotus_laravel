@@ -137,7 +137,7 @@ a:hover,
   border-radius: 0.25rem;
   vertical-align: middle;
   /* 1 */
-  background: #1e87f0;
+  background: #2c5364 !important;
   color: #fff;
   font-size: 75%;
   /* 2 */
@@ -27424,6 +27424,10 @@ iframe.uk-cover {
   outline: none;
 }
 
+.uk-overlay-primary {
+  background: rgba(34, 34, 34, 0.67) !important;
+}
+
 .uk-box-shadow-medium {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
@@ -27543,7 +27547,7 @@ iframe.uk-cover {
   display: none;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 800px) {
   .res-menu-button {
     display: -webkit-box;
     display: flex;
@@ -27555,7 +27559,7 @@ iframe.uk-cover {
   display: flex;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 800px) {
   .desktop-menu {
     display: none;
   }
@@ -27573,6 +27577,10 @@ body {
   color: #ffffff;
 }
 
+.green-text {
+  color: #7cb342;
+}
+
 .playball {
   color: #7cb342 !important;
   font-family: "Playball";
@@ -27580,6 +27588,19 @@ body {
 
 .playball.border-bottom {
   border-bottom: 2px solid #7cb342 !important;
+}
+
+.banner-text {
+  text-align: center;
+}
+
+.banner-text h1 {
+  color: #cccccc !important;
+}
+
+.banner-text .white-text.playball {
+  font-family: "Playball";
+  color: #cccccc !important;
 }
 
 .material-design-icon.w25 svg {
@@ -27729,6 +27750,29 @@ footer {
   min-width: 700px;
 }
 
+@media (max-width: 800px) {
+  .login-card,
+  .register-card {
+    min-width: 1px;
+  }
+}
+
+.uk-table th {
+  padding: 16px 12px;
+  text-align: left;
+  vertical-align: bottom;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #7cb342;
+  text-transform: uppercase;
+}
+
+.uk-table-divider > tr:not(:first-child),
+.uk-table-divider > :not(:first-child) > tr,
+.uk-table-divider > :first-child > tr:not(:first-child) {
+  border-top: 1px solid #505b62;
+}
+
 .page-link {
   position: relative;
   display: block;
@@ -27760,5 +27804,24 @@ footer {
 .uk-pagination > * > :focus {
   background: transparent !important;
   color: #ffffff !important;
+}
+
+.hiw-page-banner-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.77))), url(https://raw.githubusercontent.com/lotusms/LotusMS/master/pagebanners/howitworks.jpg) 50% no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.77)), url(https://raw.githubusercontent.com/lotusms/LotusMS/master/pagebanners/howitworks.jpg) 50% no-repeat;
+}
+
+.banner-overflow {
+  height: 350px;
+  overflow: hidden;
+}
+
+.banner-overflow .banner-offset {
+  height: 100%;
+}
+
+.banner-overflow .banner-offset img {
+  position: relative;
+  top: -200px;
 }
 

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-  <main class="main-body">
+<home></home>
+  {{-- <main class="main-body">
     <main-slider></main-slider>
 		<certifications></certifications>
     <main-content></main-content>
@@ -10,5 +11,5 @@
      <website-types></website-types>
     <testimonials></testimonials>
     <latest-work></latest-work>
-  </main>
+  </main> --}}
 @endsection

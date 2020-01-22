@@ -34,7 +34,10 @@ a.uk-link-heading:hover,
     border-color: transparent;
 }
 
-a:hover, .uk-link:hover, .uk-link-toggle:hover .uk-link, .uk-link-toggle:focus .uk-link {
+a:hover,
+.uk-link:hover,
+.uk-link-toggle:hover .uk-link,
+.uk-link-toggle:focus .uk-link {
     text-decoration: none !important;
 }
 
@@ -49,7 +52,7 @@ a:hover, .uk-link:hover, .uk-link-toggle:hover .uk-link, .uk-link-toggle:focus .
     padding: 0 15px;
     line-height: 28px;
     font-size: 14px;
-    min-height:32px !important;
+    min-height: 32px !important;
 }
 
 /*
@@ -128,7 +131,7 @@ a:hover, .uk-link:hover, .uk-link-toggle:hover .uk-link, .uk-link-toggle:focus .
     border-radius: 0.25rem;
     vertical-align: middle;
     /* 1 */
-    background: #1e87f0;
+    background: $primary !important;
     color: #fff;
     font-size: 75%;
     /* 2 */

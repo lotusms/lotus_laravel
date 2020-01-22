@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -29,15 +29,12 @@
 
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
-      try{
-        CKEDITOR.replace( 'article-ckeditor' )
-        ckInstance.removeAllListeners();
-        CKEDITOR.remove(ckInstance);
-      }
-      catch {
-        
-      };
+        setTimeout(function(){
+            CKEDITOR.replace( 'article-ckeditor' );
+        },400);
     </script>
+
+
   </body>
 
 </html>

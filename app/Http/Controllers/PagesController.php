@@ -17,6 +17,11 @@ class PagesController extends Controller
         return view('pages.about')->with('title', $title); 
     }
 
+    public function howitworks(){
+        $title = "How It Works";
+        return view('pages.how-it-works')->with('title', $title); 
+    }
+
     public function services(){
         $data = array(
             'title' => 'Services',
