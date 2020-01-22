@@ -217,6 +217,22 @@ body {
         font-family: $playball;
         color: darken($white-text, 20%) !important;
     }
+    @media(max-width: 800px) {
+        h1{
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 22px
+        }
+    }
+    @media(max-width: 530px) {
+        h1{
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 18px
+        }
+    }
 }
 
 .material-design-icon.w25 {
@@ -420,6 +436,14 @@ footer {
         height: 100%;
         img {
             position: relative;
+        }
+        &.hit {
+            img {
+                // top: -200px;
+                @media(max-width: 800px) {
+                    top:0px;
+                }
+            }
         }
     }
 }

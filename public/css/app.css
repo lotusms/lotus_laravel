@@ -27629,6 +27629,26 @@ body {
   color: #cccccc !important;
 }
 
+@media (max-width: 800px) {
+  .banner-text h1 {
+    font-size: 35px;
+  }
+
+  .banner-text h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 530px) {
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .banner-text h3 {
+    font-size: 18px;
+  }
+}
+
 .material-design-icon.w25 svg {
   width: 16% !important;
 }
@@ -27848,6 +27868,12 @@ footer {
 
 .banner-overflow .banner-offset img {
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .banner-overflow .banner-offset.hit img {
+    top: 0px;
+  }
 }
 
 .cores {

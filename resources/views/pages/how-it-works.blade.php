@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="banner-overflow" style="height: 350px;">
-    <div class="uk-inline uk-light banner-offset">
-      <img src="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/pagebanners/howitworks.webp" style="top: -200px;" alt="">
+  <div class="banner-overflow" style="height: 100%;">
+    <div class="uk-inline uk-light banner-offset hit">
+      <img src="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/pagebanners/howitworks.webp" alt="">
       <div class="uk-overlay uk-overlay-primary uk-position-cover"></div>
       <div class="uk-position-center banner-text">
         <div class="uk-container uk-container-small">

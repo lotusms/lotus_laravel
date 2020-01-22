@@ -22,7 +22,18 @@
           @foreach($posts as $post)
             <div class="uk-width-1-3@m">
               <div class="uk-card uk-card-secondary mb-3">
-                <post-image :post="{{ $post }}"></post-image>
+                <div class="ms-thumbnail ms-thumbnail-diagonal">
+                  <post-image :post="{{ $post }}"></post-image>
+                  <figcaption class="ms-thumbnail-caption text-center">
+                      <div class="ms-thumbnail-caption-content">
+                          <h3
+                              class="green-text playball ms-thumbnail-caption-title"
+                          >
+                              <post-title :post="{{ $post }}"></post-title>
+                          </h3>
+                      </div>
+                  </figcaption>
+                </div>
                 <div class="uk-card-body">
                   <post-title :post="{{ $post }}"></post-title>
                   <div>By: {{$post->user->name}}, {{$post->created_date}}</div>
