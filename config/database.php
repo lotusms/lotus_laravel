@@ -119,10 +119,12 @@ return [
 
     'redis' => [
 
-        'client' => env('REDIS_CLIENT', 'predis'),
+        'client' => env('REDIS_CLIENT', 'predis'), // 6.0 remove
+        // 'client' => env('REDIS_CLIENT', 'phpredis'), // 6.0 update
 
         'options' => [
-            'cluster' => env('REDIS_CLUSTER', 'predis'),
+            'cluster' => env('REDIS_CLUSTER', 'predis'), // 6.0 remove
+            // 'cluster' => env('REDIS_CLUSTER', 'redis'), // 6.0 update
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
         ],
 

@@ -44,7 +44,8 @@ return [
     */
 
     'argon' => [
-        'memory' => 1024,
+        'memory' => 1024,  // 6.0 remove
+        // 'memory' => 8192, // 6.0 update
         'threads' => 2,
         'time' => 2,
     ],
