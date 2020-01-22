@@ -24,22 +24,22 @@ class PagesController extends Controller
 
     public function webdesign(){
         $title = "Web Design";
-        return view('pages.webdesign')->with('title', $title); 
+        return view('pages.web-design')->with('title', $title); 
     }
     
     public function graphicdesign(){
         $title = "Graphic Design";
-        return view('pages.graphicdesign')->with('title', $title); 
+        return view('pages.graphic-design')->with('title', $title); 
     }
     
     public function userexperienceoptimization(){
         $title = "User Experience Optimization";
-        return view('pages.userexperienceoptimization')->with('title', $title); 
+        return view('pages.user-experience-optimization')->with('title', $title); 
     }
     
     public function webmaintenance(){
         $title = "Web Maintenance";
-        return view('pages.webmaintenance')->with('title', $title); 
+        return view('pages.web-maintenance')->with('title', $title); 
     }
     
     public function contact(){
@@ -49,22 +49,22 @@ class PagesController extends Controller
     
     public function privacypolicy(){
         $title = "Privacy Policy";
-        return view('pages.privacypolicy')->with('title', $title); 
+        return view('pages.privacy-policy')->with('title', $title); 
     }
     
     public function refundpolicy(){
         $title = "Refund Policy";
-        return view('pages.refundpolicy')->with('title', $title); 
+        return view('pages.refund-policy')->with('title', $title); 
     }
     
     public function salespolicy(){
         $title = "Sales Policy";
-        return view('pages.salespolicy')->with('title', $title); 
+        return view('pages.sales-policy')->with('title', $title); 
     }
     
     public function termsofuse(){
         $title = "Terms Of Use";
-        return view('pages.termsofuse')->with('title', $title); 
+        return view('pages.terms-of-use')->with('title', $title); 
     }
     
     public function faqs(){

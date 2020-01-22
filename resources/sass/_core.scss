@@ -119,8 +119,8 @@ a:hover,
 }
 
 .uk-alert-primary {
-    background: #d8eafc;
-    color: #1e87f0;
+    background: #3781b1 !important;
+    color: #b0d5ec !important;
 }
 
 .uk-badge {
@@ -307,8 +307,12 @@ a:hover,
 .uk-button-secondary:disabled,
 .uk-button-danger:disabled {
     background-color: transparent;
-    color: #999;
-    border-color: #e5e5e5;
+    color: inherit !important;
+    border-color: inherit !important;
+    opacity: 0.6;
+    &:hover {
+        cursor: not-allowed;
+    }
 }
 
 /*

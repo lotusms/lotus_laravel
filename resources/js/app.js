@@ -53,6 +53,32 @@ Vue.component(
     "contact-form",
     require("./components/contact/ContactForm.vue").default
 );
+Vue.component(
+    "web-design",
+    require("./components/services/WebDesign.vue").default
+);
+Vue.component(
+    "branding-design",
+    require("./components/services/BrandingDesign.vue").default
+);
+Vue.component("logos", require("./components/services/Logos.vue").default);
+Vue.component(
+    "ux-slider",
+    require("./components/services/UxSlider.vue").default
+);
+Vue.component(
+    "ux-sidebar",
+    require("./components/services/UxSidebar.vue").default
+);
+Vue.component(
+    "ux-related-projects",
+    require("./components/services/UxRelatedProjects.vue").default
+);
+Vue.component(
+    "price-table",
+    require("./components/services/PriceTable.vue").default
+);
+Vue.component("questions", require("./components/Questions.vue").default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
