@@ -32,6 +32,36 @@
         setTimeout(function(){
             CKEDITOR.replace( 'article-ckeditor' );
         },400);
+
+        let path = window.location.pathname;
+
+        switch(path) {
+          case '/':
+            document.getElementById('home').className += ' uk-active';
+            break;
+          case '/web-design':
+          case '/graphic-design':
+          case '/user-experience-optimization':
+          case '/web-maintenance':
+            document.getElementById('services').className += ' uk-active';
+            break;
+          case '/how-it-works':
+            document.getElementById('how-it-works').className += ' uk-active';
+            break;
+          case '/posts':
+          case '/posts/**':
+            document.getElementById('posts').className += ' uk-active';
+            break;
+          case '/about':
+            document.getElementById('about').className += ' uk-active';
+            break;
+          case '/contact':
+            document.getElementById('contact').className += ' uk-active';
+            break;
+          default:
+            null;
+        }
+
     </script>
 
 

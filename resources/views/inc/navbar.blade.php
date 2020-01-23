@@ -13,26 +13,26 @@
 
     <div class="uk-navbar-right desktop-menu" uk-grid>
       <div class="uk-width-1-1 mt-0 main-nav uk-position-bottom">
-        <ul class="uk-navbar-nav uk-flex-right">
-            <li class="uk-active"><a href="/">Home</a></li>
-            <li>
+        <ul class="uk-navbar-nav uk-flex-right" id="nav">
+            <li id="home"><a href="/">Home</a></li>
+            <li id="services">
                 <a href="#">
                   Services 
                   <span uk-icon="chevron-down"></span>
                 </a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-1-5  uk-box-shadow-medium">
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li><a href="/web-design">Web Design</a></li>
-                    <li><a href="/graphic-design">Graphic Design</a></li>
-                    <li><a href="/user-experience-optimization">User Experience Optimization</a></li>
-                    <li><a href="/web-maintenance">Web Maintenance</a></li>
+                    <li id="web-design"><a href="/web-design">Web Design</a></li>
+                    <li id="graphic-design"><a href="/graphic-design">Graphic Design</a></li>
+                    <li id="user-experience-optimization"><a href="/user-experience-optimization">User Experience Optimization</a></li>
+                    <li id="web-maintenance"><a href="/web-maintenance">Web Maintenance</a></li>
                   </ul>
                 </div>
             </li>
-            <li><a href="/how-it-works">How it works</a></li>
-            <li><a href="/posts">Blog</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li id="how-it-works"><a href="/how-it-works">How it works</a></li>
+            <li id="posts"><a href="/posts">Blog</a></li>
+            <li id="about"><a href="/about">About</a></li>
+            <li id="contact"><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </div>

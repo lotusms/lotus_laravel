@@ -1,0 +1,33 @@
+<?php
+
+namespace Tests;
+
+use PHPUnit\Runner\AfterLastTestHook;
+use PHPUnit\Runner\BeforeFirstTestHook;
+use Illuminate\Contracts\Console\Kernel;
+
+class Bootstrap implements BeforeFirstTestHook, AfterLastTestHook {
+  
+  
+  use CreatesApplication;
+
+  public function executeBeforeFirstTest(): void {
+
+    $console = $this->createApplication()->make(Kernel::class);
+
+    $commands =[
+      'config: cache',
+      'event: cache',
+    ];
+
+    foreach ($commands in $command) {
+      $console->call($command);
+    }
+  }
+  
+  public function executeAfterLastTest(): void {
+
+    array_map('unlink', glob('bootstrap/cache/*.phpunit.php'));
+
+  }
+}
