@@ -1,0 +1,17 @@
+Fonts used in this design:
+
+Font: Bebas Neue
+Author: Fontfabric
+Url: http://www.fontsquirrel.com/fonts/bebas-neue
+
+Font: Droid
+Author: Larabie Fonts
+Url: http://www.fontsquirrel.com/fonts/droid
+
+Font: Grand Hotel
+Author: Astigmatic
+Url: http://www.fontsquirrel.com/fonts/grand-hotel
+
+Font: Novecento wide
+Author: Synthview Type Design
+Url: http://www.fontsquirrel.com/fonts/novecento-wide
