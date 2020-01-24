@@ -13,7 +13,7 @@
 
     <div class="uk-navbar-right desktop-menu" uk-grid>
       <div class="uk-width-1-1 mt-0 main-nav uk-position-bottom">
-        <ul class="uk-navbar-nav uk-flex-right" id="nav">
+        <ul class="uk-navbar-nav uk-flex-right mr-4" id="nav"> 
             <li id="home"><a href="/">Home</a></li>
             <li id="services">
                 <a href="#">
