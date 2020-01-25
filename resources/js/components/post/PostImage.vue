@@ -1,7 +1,7 @@
 <template>
 	<div v-if="cover_image">
 		<a :href="url">
-			<img style="width:100%" :src="`/public/cover_images/${cover_image}`" :alt="title" />
+			<img style="width:100%" :src="`/storage/cover_images/${cover_image}`" :alt="title" />
 		</a>
 	</div>
 </template>
