@@ -1,17 +1,17 @@
 <?php
 
-'pgsql' => [
-      'driver' => 'mysql',
-        'host' => env('DB_HOST', 'us-cdbr-iron-east-05.cleardb.net'),
-        'port' => env('DB_PORT', '3306'),
-        'database' => env('DB_DATABASE', 'heroku_a0f357ae2a19f14'),
-        'username' => env('DB_USERNAME', 'b5195c1c044b09'),
-        'password' => env('DB_PASSWORD', '33f7fbd4'),
-        'charset' => 'utf8',
-        'prefix' => '',
-        'schema' => 'public',
-        'sslmode' => 'prefer',
-    ]
+// 'pgsql' => [
+//       'driver' => 'mysql',
+//         'host' => env('DB_HOST', 'us-cdbr-iron-east-05.cleardb.net'),
+//         'port' => env('DB_PORT', '3306'),
+//         'database' => env('DB_DATABASE', 'heroku_a0f357ae2a19f14'),
+//         'username' => env('DB_USERNAME', 'b5195c1c044b09'),
+//         'password' => env('DB_PASSWORD', '33f7fbd4'),
+//         'charset' => 'utf8',
+//         'prefix' => '',
+//         'schema' => 'public',
+//         'sslmode' => 'prefer',
+//     ]
 
 // $cleardb_url = parse_url(getenv('CLEARDB_DATABASE_URL'));
 // $cleardb_server = $cleardb_url["host"];
