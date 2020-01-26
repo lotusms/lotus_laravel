@@ -217,20 +217,20 @@ body {
         font-family: $playball;
         color: darken($white-text, 20%) !important;
     }
-    @media(max-width: 800px) {
-        h1{
+    @media (max-width: 800px) {
+        h1 {
             font-size: 35px;
         }
         h3 {
-            font-size: 22px
+            font-size: 22px;
         }
     }
-    @media(max-width: 530px) {
-        h1{
+    @media (max-width: 530px) {
+        h1 {
             font-size: 28px;
         }
         h3 {
-            font-size: 18px
+            font-size: 18px;
         }
     }
 }
@@ -440,8 +440,8 @@ footer {
         &.hit {
             img {
                 // top: -200px;
-                @media(max-width: 800px) {
-                    top:0px;
+                @media (max-width: 800px) {
+                    top: 0px;
                 }
             }
         }
@@ -563,4 +563,9 @@ footer {
             }
         }
     }
+}
+
+h3 {
+    color: #7cb342 !important;
+    font-family: "Playball";
 }

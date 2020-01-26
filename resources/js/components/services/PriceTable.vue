@@ -180,6 +180,8 @@ export default {
 	margin: 0;
 	font-size: 40px;
 	font-size: 4rem;
+	font-family: "Barlow";
+	color: #333 !important;
 }
 .price-table header h3 sup {
 	font-size: 20px;
