@@ -30,7 +30,7 @@
                           <h3
                               class="green-text playball ms-thumbnail-caption-title"
                           >
-                              <post-title :post="{{ $post }}"></post-title>
+                              <post-title class="excerpt-sm" :post="{{ $post }}"></post-title>
                           </h3>
                       </div>
                   </figcaption>
