@@ -28019,3 +28019,7 @@ h3 {
   font-family: "Playball";
 }
 
+.excerpt h3 {
+  display: none;
+}
+

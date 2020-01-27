@@ -55847,7 +55847,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", {
-    staticClass: "paragraph mt-3",
+    staticClass: "paragraph mt-3 excerpt",
     domProps: { innerHTML: _vm._f("truncate")(_vm.body_html, 220) }
   })
 }
