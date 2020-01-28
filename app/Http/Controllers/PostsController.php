@@ -33,11 +33,11 @@ class PostsController extends Controller
     // $posts = Post::orderBy('title', 'desc')->paginate(10);
 
     $posts = Post::latest()->paginate(6);
-    
-    return 
+
+    return
       view('posts.index', compact('posts'))->with('user');
 
-    
+
   }
 
   /**
@@ -72,10 +72,10 @@ class PostsController extends Controller
     if($request->hasFile('cover_image')) {
       // Get filename with the extension
       $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
-      
+
       // Get just filename
       $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-      
+
       //Get just extension
       $extension = $request->file('cover_image')->getClientOriginalExtension();
 
@@ -83,7 +83,7 @@ class PostsController extends Controller
       $fileNameToStore = $filename.'_'.time().'.'.$extension;
 
       //Upload the image
-      $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+      $path = $request->file('cover_image')->storeAs('cover_images', $fileNameToStore);
     } else {
       $fileNameToStore = '';
     }
@@ -109,7 +109,7 @@ class PostsController extends Controller
   {
 
     // fetch a single post
-    $posts = Post::latest()->get(); 
+    $posts = Post::latest()->get();
     return view('posts.show', compact('post'))->with(['post'=> $post, 'posts'=> $posts]);
 
   }
@@ -152,10 +152,10 @@ class PostsController extends Controller
     if($request->hasFile('cover_image')) {
       // Get filename with the extension
       $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
-      
+
       // Get just filename
       $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-      
+
       //Get just extension
       $extension = $request->file('cover_image')->getClientOriginalExtension();
 
@@ -163,8 +163,8 @@ class PostsController extends Controller
       $fileNameToStore = $filename.'_'.time().'.'.$extension;
 
       //Upload the image
-      $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
-    } 
+      $path = $request->file('cover_image')->storeAs('cover_images', $fileNameToStore);
+    }
 
     // Create post
     $post = Post::find($id);
@@ -175,7 +175,7 @@ class PostsController extends Controller
     }
     $post->save();
 
-    return redirect('/posts')->with('success', 'Yay!!! Your post was updated');       
+    return redirect('/posts')->with('success', 'Yay!!! Your post was updated');
   }
 
   /**
@@ -188,7 +188,7 @@ class PostsController extends Controller
   {
     //
     $post = Post::find($id);
-    
+
     // Check for correct user
     if(auth()->user()->id !== $post->user_id) {
       return redirect('/posts')->with('error', 'Oops!!, you reached an unauthorized section and you have been re-directed.');
@@ -200,7 +200,7 @@ class PostsController extends Controller
     }
 
     $post->delete();
-    return redirect('/posts')->with('success', 'FYI, you removed a post.'); 
+    return redirect('/posts')->with('success', 'FYI, you removed a post.');
 
   }
 }
