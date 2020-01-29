@@ -1,7 +1,5 @@
 <template>
-	<h3>
-		<h3 class="green-text playball">{{ title | truncate(40) }}</h3>
-	</h3>
+	<span>{{ title | truncate(40) }}</span>
 </template>
 
 <script>
