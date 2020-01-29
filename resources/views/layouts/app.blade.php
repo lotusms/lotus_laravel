@@ -57,7 +57,7 @@
     <script>
         setTimeout(function(){
             CKEDITOR.replace( 'article-ckeditor', options );
-        },400);
+        },500);
 
         let path = window.location.pathname;
 

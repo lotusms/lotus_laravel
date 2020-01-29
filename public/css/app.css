@@ -27425,6 +27425,10 @@ iframe.uk-cover {
   src: url("/fonts/shopping_script_demo.woff2");
 }
 
+.cke_contents {
+  height: 400px !important;
+}
+
 *:hover,
 *:focus,
 *:active,
