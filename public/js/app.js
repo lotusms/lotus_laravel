@@ -55910,7 +55910,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("h3", [
-    _c("a", { staticClass: "green-text playball", attrs: { href: _vm.url } }, [
+    _c("h3", { staticClass: "green-text playball" }, [
       _vm._v(_vm._s(_vm._f("truncate")(_vm.title, 40)))
     ])
   ])

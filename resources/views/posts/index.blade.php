@@ -24,7 +24,7 @@
               <div class="uk-card uk-card-secondary mb-3">
                 <div class="ms-thumbnail ms-thumbnail-diagonal">
                   <post-image :post="{{ $post }}"></post-image>
-                  {{-- <img src="{{ asset('storage/cover_images/'.$post->$cover_image) }}" alt="..."> --}}
+                  <a href="{{$post->url}}">
                   <figcaption class="ms-thumbnail-caption text-center">
                       <div class="ms-thumbnail-caption-content">
                           <h3
@@ -34,6 +34,7 @@
                           </h3>
                       </div>
                   </figcaption>
+                  </a>
                 </div>
                 <div class="uk-card-body">
                   <post-title :post="{{ $post }}"></post-title>
