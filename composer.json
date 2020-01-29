@@ -14,7 +14,8 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.4.0",
         "uikit/uikit": "^3.2",
-        "unisharp/laravel-ckeditor": "^4.7"
+        "unisharp/laravel-ckeditor": "^4.7",
+        "unisharp/laravel-filemanager": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",

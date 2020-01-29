@@ -28023,3 +28023,8 @@ h3 {
   display: none;
 }
 
+.cke_top {
+  border-bottom: 1px solid #2c5364 !important;
+  background: #2c5364 !important;
+}
+

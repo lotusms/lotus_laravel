@@ -30,3 +30,7 @@ Route::get('/faqs', 'PagesController@faqs');
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web']], function () {
+     \UniSharp\LaravelFilemanager\Lfm::routes();
+ });
