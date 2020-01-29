@@ -27,11 +27,9 @@
                   <a href="{{$post->url}}">
                   <figcaption class="ms-thumbnail-caption text-center">
                       <div class="ms-thumbnail-caption-content">
-                          <h3
-                              class="green-text playball ms-thumbnail-caption-title"
-                          >
-                              <post-title :post="{{ $post }}"></post-title>
-                          </h3>
+                          <span class="ms-thumbnail-caption-title" >
+                            <post-title :post="{{ $post }}"></post-title>
+                          </span>
                       </div>
                   </figcaption>
                   </a>

@@ -55907,7 +55907,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("span", [_vm._v(_vm._s(_vm._f("truncate")(_vm.title, 40)))])
+  return _c("h3", { staticClass: "green-text playball" }, [
+    _vm._v(_vm._s(_vm._f("truncate")(_vm.title, 40)))
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
