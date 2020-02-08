@@ -5,7 +5,7 @@
         <ul class="uk-navbar-nav">
             <li>
               <a class="navbar-brand" href="/">
-                <img src="/img/logo.svg"/>
+                <img src="/img/logo.svg" alt="LOTUS Marketing Solutions Logo"/>
               </a>
             </li>
         </ul>

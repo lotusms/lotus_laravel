@@ -2585,26 +2585,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Certifications",
   data: function data() {
     return {
       certifications: [{
         id: "1",
-        image: "sba.webp"
+        image: "sba"
       }, {
         id: "2",
-        image: "adobe.webp"
+        image: "adobe"
       }, {
         id: "3",
-        image: "vosb.webp"
+        image: "vosb"
       }, {
         id: "4",
-        image: "microsoft.webp"
+        image: "microsoft"
       }, {
         id: "5",
-        image: "w3.webp"
+        image: "w3"
       }]
     };
   }
@@ -54838,7 +54837,9 @@ var render = function() {
                   attrs: {
                     src:
                       "https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/certifications/" +
-                      certification.image
+                      certification.image +
+                      ".webp",
+                    alt: certification.image + " Certification"
                   }
                 })
               ]

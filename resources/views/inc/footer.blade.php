@@ -5,7 +5,7 @@
     </h4>
     <div class="mb-5">
       <a class="navbar-brand" href="{{ url('/') }}">
-        <img src="/img/logo.svg"/>
+        <img src="/img/logo.svg" alt="LOTUS MS Logo"/>
       </a>
     </div>
     <p class="paragraph white-text mt-4" style="font-size: 14px;">If you would like to colaborate as a blog writer, contact us and we will gladly discuss your knowledge and capabilites and give you access to our editing platform.</p>

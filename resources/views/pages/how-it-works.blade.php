@@ -3,7 +3,7 @@
 @section('content')
   <div class="banner-overflow" style="height: 100%;">
     <div class="uk-inline uk-light banner-offset hit">
-      <img src="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/pagebanners/howitworks.webp" alt="">
+      <img src="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/pagebanners/howitworks.webp" alt="The Design Project Process">
       <div class="uk-overlay uk-overlay-primary uk-position-cover"></div>
       <div class="uk-position-center banner-text">
         <div class="uk-container uk-container-small">

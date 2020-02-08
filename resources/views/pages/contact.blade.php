@@ -18,7 +18,7 @@
         <div class="justify-around items-end" uk-grid>
           <div class="uk-width-1-4@m">
             <div class="text-center">
-              <img src="/img/logo.svg" alt="" />
+              <img src="/img/logo.svg" alt="LOTUS Logo" />
             </div>
             <contact-info></contact-info>
           </div>

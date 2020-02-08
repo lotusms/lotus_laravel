@@ -9,9 +9,8 @@
 				>
 					<img
 						class="max-width"
-						:src="
-                            `https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/certifications/${certification.image}`
-                        "
+						:src="`https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/certifications/${certification.image}.webp`"
+						:alt="`${certification.image} Certification`"
 					/>
 				</div>
 			</div>
@@ -27,23 +26,23 @@ export default {
 			certifications: [
 				{
 					id: "1",
-					image: "sba.webp"
+					image: "sba"
 				},
 				{
 					id: "2",
-					image: "adobe.webp"
+					image: "adobe"
 				},
 				{
 					id: "3",
-					image: "vosb.webp"
+					image: "vosb"
 				},
 				{
 					id: "4",
-					image: "microsoft.webp"
+					image: "microsoft"
 				},
 				{
 					id: "5",
-					image: "w3.webp"
+					image: "w3"
 				}
 			]
 		};
