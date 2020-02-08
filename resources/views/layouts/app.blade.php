@@ -9,13 +9,13 @@
     <meta property="og:title" content="LOTUS Marketing Solutions LLC">
     <meta property="fb:app_id"  content="278493115638960">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://wwww.lotusmarketingsolutions.com">
+    <meta property="og:url" content="http://www.lotusmarketingsolutions.com">
     <meta property="og:description" content="The best web designers you will ever hire">
     <meta property="og:image" content="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/Facebook-Share-Card.webp">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="The best web designers you will ever hire">
-    <meta name="twitter:site" content="http://wwww.lotusmarketingsolutions.com">
+    <meta name="twitter:site" content="http://www.lotusmarketingsolutions.com">
     <meta name="twitter:title" content="LOTUS Marketing Solutions LLC">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/Facebook-Share-Card.webp">
 
