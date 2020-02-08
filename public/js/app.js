@@ -2883,9 +2883,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "MainSlider",
   data: function data() {
@@ -3022,9 +3019,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -3350,18 +3344,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -55086,7 +55068,7 @@ var render = function() {
                     src:
                       "https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/slider/" +
                       slide.image,
-                    alt: "",
+                    alt: slide.title1 + " " + slide.title2,
                     "uk-cover": ""
                   }
                 }),
@@ -55100,29 +55082,29 @@ var render = function() {
                   [
                     _c("h2", { staticClass: "main-banner-title" }, [
                       _vm._v(
-                        "\n                        " +
+                        "\n\t\t\t\t\t\t\t" +
                           _vm._s(slide.title1) +
-                          "\n                        "
+                          "\n\t\t\t\t\t\t\t"
                       ),
                       _c("br"),
                       _vm._v(
-                        "\n                        " +
+                        "\n\t\t\t\t\t\t\t" +
                           _vm._s(slide.title2) +
-                          "\n                    "
+                          "\n\t\t\t\t\t\t"
                       )
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "main-banner-subtitle" }, [
                       _vm._v(
-                        "\n                        " +
+                        "\n\t\t\t\t\t\t\t" +
                           _vm._s(slide.subtitle1) +
-                          "\n                        "
+                          "\n\t\t\t\t\t\t\t"
                       ),
                       _c("br"),
                       _vm._v(
-                        "\n                        " +
+                        "\n\t\t\t\t\t\t\t" +
                           _vm._s(slide.subtitle2) +
-                          "\n                    "
+                          "\n\t\t\t\t\t\t"
                       )
                     ])
                   ]
@@ -55348,7 +55330,8 @@ var render = function() {
                           attrs: {
                             src:
                               "https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/services/" +
-                              card.image
+                              card.image,
+                            alt: card.title
                           }
                         })
                       ]
@@ -55714,18 +55697,17 @@ var render = function() {
               },
               [
                 _c("h3", { staticClass: "uk-card-title green-text playball" }, [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(item.title) +
-                      "\n                    "
-                  )
+                  _vm._v(_vm._s(item.title))
                 ])
               ]
             ),
             _vm._v(" "),
             _c("img", {
               class: "icon " + item.icon,
-              attrs: { src: "/img/timeline/" + item.icon + ".svg" }
+              attrs: {
+                src: "/img/timeline/" + item.icon + ".svg",
+                alt: item.title
+              }
             }),
             _vm._v(" "),
             _c("div", { staticClass: "uk-card-body" }, [

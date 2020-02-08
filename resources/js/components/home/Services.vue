@@ -6,13 +6,10 @@
 					<div class="text-center" style="padding: 20px 50px;">
 						<div class="avatar services-avatar rounded-circle">
 							<img
-								:src="
-                                    `https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/services/${card.image}`
-                                "
-								:class="
-                                    `rounded-circle card-image image-${card.id}`
-                                "
+								:src="`https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/services/${card.image}`"
+								:class="`rounded-circle card-image image-${card.id}`"
 								style="width: 100%; height: 100%;"
+								:alt="card.title"
 							/>
 						</div>
 					</div>
