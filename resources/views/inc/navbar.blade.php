@@ -4,7 +4,7 @@
     <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
             <li>
-              <a class="navbar-brand" href="{{ url('/') }}">
+              <a class="navbar-brand" href="/">
                 <img src="/img/logo.svg"/>
               </a>
             </li>
