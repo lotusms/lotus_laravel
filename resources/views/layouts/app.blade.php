@@ -35,6 +35,18 @@
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     
     <link property="favicon" rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37483178-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-37483178-1');
+    </script>
+
+
   </head>   
 
   <body>
