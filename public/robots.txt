@@ -1,2 +1,3 @@
+Sitemap: http://www.lotusmarketingsolutions.com/sitemap.xml
 User-agent: *
 Disallow:
