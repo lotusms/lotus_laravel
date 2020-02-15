@@ -22,6 +22,6 @@
     RewriteCond %{HTTP_HOST} ^www\.lotusmarketingsolutions\.com$
     RewriteRule ^/?$ "http\:\/\/lotusmarketingsolutions\.com\/" [R=301,L]
 
-    RewriteCond %{ENV:HTTPS} on
-    RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    RewriteCond %{HTTPS} =on
+    RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [L,R=301]
 </IfModule>
