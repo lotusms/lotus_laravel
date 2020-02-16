@@ -1,23 +1,8 @@
 <?php
 
 namespace App\Http;
-namespace App\Http\Middleware;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-
-use Closure;
-
-class Nonsec
-{
-    public function handle($request, Closure $next)
-    {
-        if($request->secure()) {
-            return redirect($request->path());
-        }
-
-        return $next($request);
-    }
-}
 
 class Kernel extends HttpKernel
 {
