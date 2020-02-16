@@ -2,7 +2,7 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} on
-RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI}
+    RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}
 
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
