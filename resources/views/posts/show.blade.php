@@ -9,7 +9,7 @@
         "@id": "{{$post->url}}"
       },
       "headline": "{{$post->title}}",
-      "description": "{{str_limit(!!$post->body_html!!, $limit = 120, $end = '...') }}",
+      "description": "{{str_limit($post->body_html, $limit = 120, $end = '...') }}",
       "image": "{{asset("storage/cover_images/$post->cover_image")}}",  
       "author": {
         "@type": "Person",
