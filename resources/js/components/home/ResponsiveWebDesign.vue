@@ -103,7 +103,7 @@ export default {
 }
 
 .mailto-btn.uk-margin-small-left {
-	@media (max-width: 500px) {
+	@media (max-width: 480px) {
 		margin-left: 0 !important;
 	}
 }
