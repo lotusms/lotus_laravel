@@ -24,7 +24,7 @@
 					</a>
 					<a
 						:href="mailbtnto"
-						class="uk-button uk-button-primary uk-margin-small-left@m uk-margin-small-bottom"
+						class="uk-button uk-button-primary uk-margin-small-left uk-margin-small-bottom mailto-btn"
 					>
 						<span uk-icon="mail" class="mr-2"></span>
 						{{ mailbtn }}
@@ -100,5 +100,11 @@ export default {
 	animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+}
+
+.mailto-btn.uk-margin-small-left {
+	@media (max-width: 500px) {
+		margin-left: 0 !important;
+	}
 }
 </style>
