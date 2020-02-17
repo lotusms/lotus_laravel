@@ -1,3 +1,43 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "LOTUS Marketing Solutions LLC",
+  "image": "",
+  "@id": "",
+  "url": "",
+  "telephone": "7179458132",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4355 N 3rd St",
+    "addressLocality": "Harrisburg",
+    "addressRegion": "PA",
+    "postalCode": "17011",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://www.facebook.com/LOTUSMarketingSolutionsLLC/",
+    "https://twitter.com/LotusMarketingS",
+    "https://www.linkedin.com/in/lotus-marketing-solutions-llc-32185462/",
+    "https://lotusmarketingsolutions.com"
+  ]
+}
+</script>
+
 <footer class="uk-padding-medium uk-padding-large@m bg-black footer" uk-grid style="margin: 0 auto;">
   <div class="footer-col login-register uk-width-1-3@m p-4">
     <h4 class="green-text playball text-center border-bottom" style="padding-bottom: 5px;">
