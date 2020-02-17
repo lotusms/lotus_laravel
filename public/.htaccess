@@ -24,5 +24,4 @@
     RewriteCond %{HTTP_HOST} ^www\.lotusmarketingsolutions\.com$
     RewriteRule ^/?$ "https\:\/\/lotusmarketingsolutions\.com\/" [R=301,L]
 
-    
 </IfModule>
