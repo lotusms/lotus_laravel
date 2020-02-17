@@ -1,4 +1,4 @@
-<footer class="uk-padding-medium bg-black footer" uk-grid style="margin: 0 auto;">
+<footer class="uk-padding-medium uk-padding-large@m bg-black footer" uk-grid style="margin: 0 auto;">
   <div class="footer-col login-register uk-width-1-3@m p-4">
     <h4 class="green-text playball text-center border-bottom" style="padding-bottom: 5px;">
         Protected Area
