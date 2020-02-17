@@ -2977,12 +2977,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3253,16 +3247,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -8870,7 +8854,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".tab[data-v-420d3a33] {\n  font-size: 23px;\n  line-height: 1.715em;\n  font-weight: 500;\n  font-family: \"playball\" !important;\n}\n.tab .q-tab__content .q-tab__label[data-v-420d3a33] {\n  font-size: 23px !important;\n}\n.tab-panels[data-v-420d3a33] {\n  background: transparent;\n}\n.tab-panels .tab-h5[data-v-420d3a33] {\n  color: #7cb342;\n  font-size: 2em;\n}", ""]);
+exports.push([module.i, ".tab[data-v-420d3a33] {\n  font-size: 23px;\n  line-height: 1.715em;\n  font-weight: 500;\n  font-family: \"playball\" !important;\n}\n.tab .q-tab__content .q-tab__label[data-v-420d3a33] {\n  font-size: 23px !important;\n}\n.tab-panels[data-v-420d3a33] {\n  background: transparent;\n}\n.tab-panels .tab-h5[data-v-420d3a33] {\n  color: #7cb342;\n  font-size: 2em;\n}\n.website-types ul:first-child li[data-v-420d3a33] {\n  padding: 0;\n}\n@media (max-width: 600px) {\n.website-types ul:first-child li a[data-v-420d3a33] {\n    font-size: 18px;\n}\n}\n@media (max-width: 480px) {\n.website-types ul[data-v-420d3a33]:first-child {\n    display: -webkit-box;\n    display: flex;\n    flex-wrap: wrap;\n    margin-left: 0;\n    padding: 0;\n    list-style: none;\n    position: static;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n            flex-direction: column;\n}\n}", ""]);
 
 // exports
 
@@ -55181,11 +55165,7 @@ var render = function() {
         _c(
           "h1",
           { staticClass: "white-text font-weight-medium text-center pb-5" },
-          [
-            _vm._v(
-              "\n                " + _vm._s(_vm.heading) + "\n            "
-            )
-          ]
+          [_vm._v(_vm._s(_vm.heading))]
         )
       ])
     ]),
@@ -55204,7 +55184,7 @@ var render = function() {
               staticClass: "white-text paragraph",
               staticStyle: { "max-width": "80%" }
             },
-            [_vm._v("\n                " + _vm._s(_vm.text) + "\n            ")]
+            [_vm._v(_vm._s(_vm.text))]
           ),
           _vm._v(" "),
           _c(
@@ -55214,23 +55194,18 @@ var render = function() {
               return _c(
                 "li",
                 { key: index, staticClass: "white-text paragraph mb-4" },
-                [
-                  _vm._v(
-                    "\n                    " +
-                      _vm._s(item.text) +
-                      "\n                "
-                  )
-                ]
+                [_vm._v(_vm._s(item.text))]
               )
             }),
             0
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "row p-4" }, [
+          _c("div", { staticClass: "row p-4 flex" }, [
             _c(
               "a",
               {
-                staticClass: "uk-button uk-button-primary",
+                staticClass:
+                  "uk-button uk-button-primary uk-margin-small-bottom",
                 attrs: { href: _vm.phonebtnto }
               },
               [
@@ -55238,18 +55213,15 @@ var render = function() {
                   staticClass: "mr-2",
                   attrs: { "uk-icon": "receiver" }
                 }),
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(_vm.phonebtn) +
-                    "\n                "
-                )
+                _vm._v("\n\t\t\t\t\t\t" + _vm._s(_vm.phonebtn) + "\n\t\t\t\t\t")
               ]
             ),
             _vm._v(" "),
             _c(
               "a",
               {
-                staticClass: "uk-button uk-button-primary ml-2",
+                staticClass:
+                  "uk-button uk-button-primary uk-margin-small-left@m uk-margin-small-bottom",
                 attrs: { href: _vm.mailbtnto }
               },
               [
@@ -55257,11 +55229,7 @@ var render = function() {
                   staticClass: "mr-2",
                   attrs: { "uk-icon": "mail" }
                 }),
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(_vm.mailbtn) +
-                    "\n                "
-                )
+                _vm._v("\n\t\t\t\t\t\t" + _vm._s(_vm.mailbtn) + "\n\t\t\t\t\t")
               ]
             )
           ])
@@ -55581,7 +55549,10 @@ var render = function() {
     [
       _c(
         "ul",
-        { staticClass: "uk-child-width-expand", attrs: { "uk-tab": "" } },
+        {
+          staticClass: "uk-child-width-expand custom-tabs",
+          attrs: { "uk-tab": "" }
+        },
         _vm._l(_vm.tabs, function(tab, index) {
           return _c("li", { key: index, staticClass: "uk-active" }, [
             _c(
@@ -55609,16 +55580,12 @@ var render = function() {
                 _c("div", { staticClass: "p-5" }, [
                   _c("h3", { staticClass: "green-text py-4 playball" }, [
                     _vm._v(
-                      "\n                        Save on the details while capturing the big picture\n                    "
+                      "Save on the details while capturing the big picture"
                     )
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "white-text" }, [
-                    _vm._v(
-                      "\n                        " +
-                        _vm._s(content.text) +
-                        "\n                    "
-                    )
+                    _vm._v(_vm._s(content.text))
                   ]),
                   _vm._v(" "),
                   _vm._m(0, true)
@@ -55656,7 +55623,7 @@ var staticRenderFns = [
       },
       [
         _c("span", { staticClass: "mr-2", attrs: { "uk-icon": "info" } }),
-        _vm._v("\n                        More info\n                    ")
+        _vm._v("\n\t\t\t\t\t\t\tMore info\n\t\t\t\t\t\t")
       ]
     )
   }
