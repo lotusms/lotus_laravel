@@ -35,7 +35,7 @@
     <!-- Styles -->
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     
-    <link property="favicon" rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link property="favicon" rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico') }}">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37483178-1"></script>
