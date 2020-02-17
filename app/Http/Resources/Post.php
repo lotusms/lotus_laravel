@@ -27,7 +27,7 @@ class Post extends JsonResource
     public function with($request) {
         return [
             'version' => '1.0.0',
-            'author_url' => url('http://lotusmarketingsolutions.com')
+            'author_url' => url('https://lotusmarketingsolutions.com')
         ];
     }
 }
