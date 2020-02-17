@@ -1,31 +1,34 @@
 @extends('layouts.app')
 
-@component('schema')
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{$post->url}}"
-  },
-  "headline": "{{$post->title}}",
-  "description": "{{str_limit($post->body_html, $limit = 120, $end = '...') }}",
-  "image": "{{asset("storage/cover_images/$post->cover_image")}}",  
-  "author": {
-    "@type": "Person",
-    "name": "{{$post->user->name}}"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "",
-      "width": ,
-      "height": 
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{$post->url}}"
+      },
+      "headline": "{{$post->title}}",
+      "description": "{{str_limit($post->body_html, $limit = 120, $end = '...') }}",
+      "image": "{{asset("storage/cover_images/$post->cover_image")}}",  
+      "author": {
+        "@type": "Person",
+        "name": "{{$post->user->name}}"
+      },  
+      "publisher": {
+        "@type": "Organization",
+        "name": "",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "",
+          "width": ,
+          "height": 
+        }
+      },
+      "datePublished": "{{$post->created_date}}",
+      "dateModified": "{{$post->created_date}}"
     }
-  },
-  "datePublished": "{{$post->created_date}}",
-  "dateModified": "{{$post->created_date}}"
-@endcomponent
+</script>
 
 @section('content')
   <main class="main-body py-4">
