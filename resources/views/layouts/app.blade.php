@@ -47,6 +47,64 @@
       gtag('config', 'UA-37483178-1');
     </script>
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/", 
+        "@type": "BreadcrumbList", 
+        "itemListElement": [{
+          "@type": "ListItem", 
+          "position": 1, 
+          "name": "Home",
+          "item": "https://lotusmarketingsolutions.com/"  
+        },{
+          "@type": "ListItem", 
+          "position": 2, 
+          "name": "Web Design",
+          "item": "https://lotusmarketingsolutions.com/web-design"  
+        },{
+          "@type": "ListItem", 
+          "position": 3, 
+          "name": "Graphic Design",
+          "item": "https://lotusmarketingsolutions.com/graphic-design"  
+        },{
+          "@type": "ListItem", 
+          "position": 4, 
+          "name": "User Experience Optimization",
+          "item": "https://lotusmarketingsolutions.com/user-experience-optimization"  
+        },{
+          "@type": "ListItem", 
+          "position": 5, 
+          "name": "Web Maintenance",
+          "item": "https://lotusmarketingsolutions.com/web-maintenance"  
+        },{
+          "@type": "ListItem", 
+          "position": 6, 
+          "name": "How It Works",
+          "item": "https://lotusmarketingsolutions.com/how-it-works"  
+        },{
+          "@type": "ListItem", 
+          "position": 7, 
+          "name": "About",
+          "item": "https://lotusmarketingsolutions.com/about"  
+        },{
+          "@type": "ListItem", 
+          "position": 8, 
+          "name": "Contact",
+          "item": "https://lotusmarketingsolutions.com/contact"  
+        },{
+          "@type": "ListItem", 
+          "position": 9, 
+          "name": "FAQs",
+          "item": "https://lotusmarketingsolutions.com/faqs"  
+        },{
+          "@type": "ListItem", 
+          "position": 10, 
+          "name": "Blogs",
+          "item": "https://lotusmarketingsolutions.com/posts"  
+        }]
+      }
+    </script>
+
 
   </head>   
 
