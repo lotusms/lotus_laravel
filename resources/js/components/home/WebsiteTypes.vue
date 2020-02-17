@@ -109,4 +109,27 @@ export default {
 		font-size: 2em;
 	}
 }
+
+.website-types {
+	.uk-tab {
+		li {
+			padding: 0;
+			a {
+				@media (max-width: 600px) {
+					font-size: 18px;
+				}
+			}
+		}
+		@media (max-width: 480px) {
+			display: -webkit-box;
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: 0;
+			padding: 0;
+			list-style: none;
+			position: static;
+			flex-direction: column;
+		}
+	}
+}
 </style>
