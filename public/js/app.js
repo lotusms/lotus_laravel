@@ -2335,12 +2335,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 
 
@@ -54489,7 +54483,7 @@ var render = function() {
         [
           _c("span", { staticClass: "social-icon" }, [_c("mail")], 1),
           _vm._v(" "),
-          _c("span", [_vm._v("lotusms@outlook.com")])
+          _c("span", [_vm._v("Email Us!")])
         ]
       ),
       _vm._v(" "),

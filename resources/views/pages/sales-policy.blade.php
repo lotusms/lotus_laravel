@@ -78,9 +78,6 @@
           <p>If there are any questions regarding these sales policies you may contact us using the information below.</p>
         
           <a href="/contact">www.lotusmarketingsolutions.com</a>
-          <br/>
-          <a rel="noindex, nofollow" href="m&amp;#97;i&amp;#108;to&amp;#58;m&amp;#37;61i&amp;#108;%74%6&amp;#70;%3&amp;#65;lotu&amp;#37;&amp;#55;3&amp;#109;s%4&amp;#48;o&amp;#117;%74%&amp;#54;&amp;#67;%6F%6&amp;#70;k&amp;#46;%63&amp;#111;m">lotusms@outlook.com</a>
-          <p>Phone: (717) 945-8132</p>
         </div>
       </div>
   </main>
