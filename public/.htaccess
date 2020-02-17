@@ -1,8 +1,5 @@
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{HTTPS} on
-    RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}
 
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -25,7 +22,7 @@
     RewriteRule ^ index.php [L]
 
     RewriteCond %{HTTP_HOST} ^www\.lotusmarketingsolutions\.com$
-    RewriteRule ^/?$ "http\:\/\/lotusmarketingsolutions\.com\/" [R=301,L]
+    RewriteRule ^/?$ "https\:\/\/lotusmarketingsolutions\.com\/" [R=301,L]
 
     
 </IfModule>
