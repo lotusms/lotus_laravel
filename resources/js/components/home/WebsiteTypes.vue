@@ -111,7 +111,7 @@ export default {
 }
 
 .website-types {
-	.uk-tab {
+	ul:first-child {
 		li {
 			padding: 0;
 			a {
