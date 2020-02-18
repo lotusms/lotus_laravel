@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="canonical" href="https://www.lotusmarketingsolutions.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Web design, graphic design, and digital marketing company in the Harrisburg, York, and Lancaster area. Very flexible and affordable to meet all of client's needs.">
+    <meta name="description" content="Web design, graphic design, and digital marketing company in the Harrisburg, York, and Lancaster area. Very flexible and affordable to meet all of our client's needs.">
 
     <meta property="og:title" content="LOTUS Marketing Solutions LLC">
     <meta property="fb:app_id"  content="278493115638960">
