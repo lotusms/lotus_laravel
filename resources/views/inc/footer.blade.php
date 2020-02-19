@@ -44,7 +44,7 @@
         Protected Area
     </h4>
     <div class="mb-5">
-      <a class="navbar-brand" href="{{ url('/') }}">
+      <a class="footer-brand" href="{{ url('/') }}">
         <img src="/img/logo.svg" alt="LOTUS MS Logo"/>
       </a>
     </div>
