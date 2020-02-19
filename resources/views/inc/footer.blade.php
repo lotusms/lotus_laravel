@@ -48,7 +48,7 @@
         <img src="/img/logo.svg" alt="LOTUS MS Logo"/>
       </a>
     </div>
-    <p class="paragraph white-text mt-4" style="font-size: 14px;">If you would like to colaborate as a blog writer, contact us and we will gladly discuss your knowledge and capabilites and give you access to our editing platform.</p>
+    <p class="paragraph white-text mt-n5" style="font-size: 14px;">If you would like to colaborate as a blog writer, contact us and we will gladly discuss your knowledge and capabilites and give you access to our editing platform.</p>
     <div class="custom-list">
       @guest
         <div class="list-group">
