@@ -48,7 +48,7 @@
               @if(!Auth::guest())
                 @if(Auth::user()->id === $post->user_id)
                   <div class="d-flex justify-content-between">
-                    <a href="{{$post->url}}/edit" class="uk-button uk-button-primary">Edit Post</a>
+                    <a href="{{$post->url}}/edit" class="uk-button uk-button-primary" style="height: 42px;">Edit Post</a>
 
                     {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST'])!!}     
                       {{Form::hidden('_method', 'DELETE')}}
