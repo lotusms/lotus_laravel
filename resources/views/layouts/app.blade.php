@@ -2,26 +2,26 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
     
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <link rel="canonical" href="https://www.lotusmarketingsolutions.com" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Web design, graphic design, and digital marketing company in the Harrisburg, York, and Lancaster area. Very flexible and affordable to meet all of our client's needs.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web design, graphic design, and digital marketing company in the Harrisburg, York, and Lancaster area. Very flexible and affordable to meet all of our client's needs." />
 
-    <meta property="og:title" content="LOTUS Marketing Solutions LLC">
-    <meta property="fb:app_id"  content="278493115638960">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.lotusmarketingsolutions.com">
-    <meta property="og:description" content="The best web designers you will ever hire">
-    <meta property="og:image" content="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/Facebook-Share-Card.webp">
+    <meta property="og:title" content="LOTUS Marketing Solutions LLC" />
+    <meta property="fb:app_id"  content="278493115638960" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lotusmarketingsolutions.com/" />
+    <meta property="og:description" content="The best web designers you will ever hire" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/Facebook-Share-Card.webp" />
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="The best web designers you will ever hire">
-    <meta name="twitter:site" content="https://www.lotusmarketingsolutions.com">
-    <meta name="twitter:title" content="LOTUS Marketing Solutions LLC">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/Facebook-Share-Card.webp">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="The best web designers you will ever hire" />
+    <meta name="twitter:site" content="https://www.lotusmarketingsolutions.com/" />
+    <meta name="twitter:title" content="LOTUS Marketing Solutions LLC" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/lotusms/LotusMS/master/webp/home/Facebook-Share-Card.webp" />
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
     <title>Professional & Attractive Web Design & Development</title>
@@ -30,13 +30,13 @@
     <script src="{{ asset('/js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
 
     <!-- Styles -->
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet" />
     
-    <link property="favicon" rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico') }}">
+    <link property="favicon" rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico') }}" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37483178-1"></script>
