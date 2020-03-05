@@ -57,6 +57,16 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>http://www.lotusmarketingsolutions.com/posts/is-there-an-roi-in-buying-a-website</loc>
+  <lastmod>2020-02-08T01:01:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.lotusmarketingsolutions.com/posts/user-usability-and-user-experience</loc>
+  <lastmod>2020-02-08T01:01:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>http://www.lotusmarketingsolutions.com/posts/never-say-you-are-too-busy</loc>
   <lastmod>2020-02-08T01:01:07+00:00</lastmod>
   <priority>0.64</priority>
@@ -68,16 +78,6 @@
 </url>
 <url>
   <loc>http://www.lotusmarketingsolutions.com/posts/removing-the-hashtag-in-angular</loc>
-  <lastmod>2020-02-08T01:01:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.lotusmarketingsolutions.com/posts/is-there-an-roi-in-buying-a-website</loc>
-  <lastmod>2020-02-08T01:01:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.lotusmarketingsolutions.com/posts/user-usability-and-user-experience</loc>
   <lastmod>2020-02-08T01:01:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -96,6 +96,19 @@
   <lastmod>2020-02-08T01:01:07+00:00</lastmod>
   <priority>0.51</priority>
 </url>
-
-
+<url>
+  <loc>https://lotusmarketingsolutions.com/posts/excessive-animations-can-kill-user-experience</loc>
+  <lastmod>2020-02-19T01:01:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lotusmarketingsolutions.com/posts/negative-vs-positive-actions</loc>
+  <lastmod>2020-03-03T01:01:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lotusmarketingsolutions.com/posts/exceeding-your-websites-functionality</loc>
+  <lastmod>2020-03-05T01:01:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
 </urlset>
