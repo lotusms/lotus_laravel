@@ -26,13 +26,13 @@
 							style="text-align: center; font-size: 40px;"
 						>Coronavirus (COVID-19) Update</h3>
 						<p>
-							The recent pandemic of COVID-19 has created many challenges for small business owners. Some of which have been forced to pause operations to minimize the risk of further spreading the virus.
+							The recent pandemic of COVID-19 has created many challenges for small business owners. Some of which have been suggesting that businesses paused physical operations to minimize the risk of further spreading the virus.
 							<br />
-							<br />We want our customers to know that at LOTUS Marketing Solutions, we are doing everything in our power to enforce the "Stay Home/Save Lives" movement and we are #QUARANTEAM. We have always been a remote online based company and this has not created any last minute arrangements for us. We will continue to service our clients as usual and in a timely manner.
+							<br />We want our customers to know that at LOTUS Marketing Solutions, we are doing everything in our power to enforce the "Stay Home/Save Lives" movement and we are #QUARANTEAM. We have always been a remote online based company and this has not created any last-minute arrangements for us. We will continue to service our clients as usual and in a timely manner.
 							<br />
-							<br />Furthermore, if your organization has been affected by COVID-19. We want you to know that we are here to help in everything we can. We can explore opprotunities to allow you to run your business from home, generate sales, collect customer's information or files, or absorb some protion of your normal business so that you can remain at least partially profitable.
+							<br />Furthermore, if your organization has been affected by COVID-19. We want you to know that we are here to help with everything we can. We can explore opportunities to allow you to run your business from home, generate sales, collect customer's information or files, or absorb some portion of your normal business so that you can remain at least partially profitable.
 							<br />
-							<br />Please fell free to reach out to us to discuss further. If your finances have been affected, we can extend a grace period to allow any new work on your site to be paid in smaller placements at a discounted rate, or postpone the due date of any new work on your sites for when you are more stable financially.
+							<br />Please feel free to reach out to us to discuss further. If your finances have been affected, we can extend a grace period to allow any new work on your site to be paid in smaller placements at a discounted rate or postpone the due date of any new work on your sites for when you are more stable financially.
 						</p>
 					</div>
 				</div>
