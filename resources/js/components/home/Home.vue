@@ -12,7 +12,7 @@
                     border-bottom: 4px solid #7cb342;
                     "
 			>
-				<div style="display:flex; flex-direction: column; align-items: center; justify-content: center">
+				<div class="uk-position-center uk-padding-large" style="margin-top: -40px;">
 					<div
 						style="
                     background: rgba(0, 0, 0, 0.52);
