@@ -1,8 +1,14 @@
 <template>
 	<main class="main-body">
 		<div class="covid-19">
-			<div class="uk-card uk-card-default uk-card-body">
-				<h3 class="uk-card-title">Coronavirus (COVID-19) Update</h3>
+			<div
+				class="uk-card uk-card-default uk-card-body"
+				style="background: rgba(23, 45, 52, 0.58); color: #fff;"
+			>
+				<h3
+					class="uk-card-title"
+					style="text-align: center; font-size: 40px;"
+				>Coronavirus (COVID-19) Update</h3>
 				<p>
 					The recent pandemic of COVID-19 has created many challenges for small business owners. Some of which have been forced to pause operations to minimize the risk of further spreading the virus.
 					<br />
