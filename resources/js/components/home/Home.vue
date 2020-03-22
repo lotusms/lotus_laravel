@@ -3,7 +3,14 @@
 		<div class="covid-19">
 			<div
 				class="uk-card uk-card-default uk-card-body"
-				style="background: rgba(23, 45, 52, 0.58); color: #fff;"
+				style="
+                    background: rgba(23, 45, 52, 0.58) url(/img/covid19.jpg) no-repeat center center;
+                    color: rgb(255, 255, 255);
+                    background-size: cover;
+                    height: 100vh;
+                    border-top: 4px solid #7cb342;
+                    border-bottom: 4px solid #7cb342;
+                    "
 			>
 				<h3
 					class="uk-card-title"
