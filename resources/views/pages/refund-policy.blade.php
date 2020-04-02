@@ -3,7 +3,7 @@
 @section('content')
   <main class="main-body py-4">
       <div class="uk-container uk-container-large uk-light">
-        <h1 class="text-center">Frequently Asked Questions</h1>
+        <h1 class="text-center">Refund Policy</h1>
         <hr/>
         <div class="q-pa-xl">
           <h3 class="green-text playball pt-4">Web Design &amp; Graphic Design</h3>
